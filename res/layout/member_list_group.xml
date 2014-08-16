@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="2dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+</LinearLayout>

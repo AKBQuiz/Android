@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    style="@style/win8_toggleButton"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Purple"
+    android:flipInterval="400"
+    android:inAnimation="@android:anim/slide_in_left"
+    android:outAnimation="@android:anim/slide_out_right"
+    android:persistentDrawingCache="animation" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="#80000000"
+            android:text="@string/menu_config"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/White" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:id="@+id/config_sounds_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/config_audio"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/White" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:baselineAligned="false" >
+
+                <ToggleButton
+                    android:id="@+id/bgm_switch"
+                    style="@style/win8_toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/toggle_win8"
+                    android:checked="true"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on" />
+
+                <TextView
+                    android:id="@+id/bgm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/config_bgm"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/White" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/bgm_volume_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/config_volume"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/White" />
+
+                <SeekBar
+                    android:id="@+id/bgm_volume"
+                    style="@style/win8_seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:max="15" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/config_sound"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/White" />
+
+                <ToggleButton
+                    android:id="@+id/sound_switch"
+                    style="@style/win8_toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:checked="true"
+                    android:textOff="@string/off"
+                    android:textOn="@string/on" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp" >
+
+                <TextView
+                    android:id="@+id/sound_volume_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/config_volume"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/White" />
+
+                <SeekBar
+                    android:id="@+id/sound_volume"
+                    style="@style/win8_seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:max="15"
+                    android:progress="5" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/config_vibration_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:text="@string/config_vibration"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/White" />
+
+            <ToggleButton
+                android:id="@+id/config_vibration_switch"
+                style="@style/win8_toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/toggle_win8"
+                android:checked="true"
+                android:textOff="@string/off"
+                android:textOn="@string/on" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/config_bgm"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/White" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/config_loopmode"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_brown"
+                android:text="@string/config_loop" />
+
+            <Button
+                android:id="@+id/config_playlist"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_coral"
+                android:text="@string/config_bgm_custom" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/config_bg_image"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/White" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/config_change_bgimage"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_green"
+                android:text="@string/config_change_bgimage"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/config_restore_bgimage"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_lime"
+                android:text="@string/config_restore_bgimage" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/config_quiz_submit"
+            style="@style/win8_button_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_win8_marine"
+            android:text="@string/config_quiz_submit" />
+
+        <Button
+            android:id="@+id/call_calendar_editor"
+            style="@style/win8_button_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_win8_pink"
+            android:text="@string/config_calendar_editor" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/config_ranking"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_teal"
+                android:text="@string/config_ranking" />
+
+            <Button
+                android:id="@+id/config_weibo"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_purple_l"
+                android:text="@string/weibo_linkto" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/config_update"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_lime"
+                android:text="@string/config_update" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/who_are_we"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_brown"
+                android:text="@string/who_are_we"
+                android:textColor="@color/White" />
+
+            <Button
+                android:id="@+id/licence"
+                style="@style/win8_button_middle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_win8_orange"
+                android:text="@string/license_title"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/config_back"
+            style="@style/win8_button_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_win8_green"
+            android:text="@string/back"
+            android:textColor="@color/White"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+	</ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+        
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:orientation="horizontal" >
+
+		    <Button
+		        android:id="@+id/config_playlist_add"
+		        style="@style/win8_button_middle"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/button_win8_marine"
+		        android:text="@string/config_bgm_add" />
+		    
+		    <Button
+		        android:id="@+id/config_playlist_back"
+		        style="@style/win8_button_middle"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/button_win8_lime"
+		        android:text="@string/back"
+		        android:textColor="@color/White" />
+
+		</LinearLayout>
+
+        <ListView
+            android:id="@+id/playlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+            
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+		    <Button
+		        android:id="@+id/config_playlist_remove"
+		        style="@style/win8_button_middle"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/button_win8_green"
+		        android:text="@string/config_bgm_remove" />
+		    
+		    <Button
+		        android:id="@+id/config_musiclist_back"
+		        style="@style/win8_button_middle"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="5dp"
+		        android:layout_weight="1"
+		        android:background="@drawable/button_win8_marine"
+		        android:text="@string/back" />
+
+		</LinearLayout>
+        
+		<TextView 
+		    android:id="@+id/current"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:text=""/>
+		
+
+		
+        <ListView
+            android:id="@+id/musiclist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+        </ListView>
+    </LinearLayout>
+    
+</ViewFlipper>
+

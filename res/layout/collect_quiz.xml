@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/Dark_Purple" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/collect_editor"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/collect_editor_hint"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:maxLength="32" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/collect_question"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+       android:id="@+id/question"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:ems="10"
+       android:hint="@string/collect_question_hint"
+       android:imeOptions="actionNext"
+       android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
+       android:maxLength="200"
+       android:minLines="2" >
+
+    </EditText>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/collect_answer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+       android:id="@+id/answer"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:ems="10"
+       android:hint="@string/collect_answer_hint"
+       android:imeOptions="actionNext"
+       android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
+       android:maxLength="50" >
+
+   </EditText>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="20dp"
+       android:text="@string/collect_wrong1"
+       android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+       android:id="@+id/wrong1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:ems="10"
+       android:hint="@string/collect_wrong_hint"
+       android:imeOptions="actionNext"
+       android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
+       android:maxLength="50" >
+
+    </EditText>
+    
+    <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="20dp"
+          android:text="@string/collect_wrong2"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+       android:id="@+id/wrong2"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:ems="10"
+       android:hint="@string/collect_wrong_hint"
+       android:imeOptions="actionNext"
+       android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
+       android:maxLength="50" >
+
+    </EditText>
+    
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginTop="20dp"
+          android:text="@string/collect_wrong3"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <EditText
+       android:id="@+id/wrong3"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:ems="10"
+       android:hint="@string/collect_wrong_hint"
+       android:imeOptions="actionDone"
+       android:inputType="textCapSentences|textAutoCorrect|textAutoComplete"
+       android:maxLength="50" >
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/chooser_diffi"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RatingBar
+        android:id="@+id/difficulty"
+        style="@style/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:max="10"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/collect_groups"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/akb_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_akb"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <ToggleButton
+                android:id="@+id/ske_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_ske"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <ToggleButton
+                android:id="@+id/nmb_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_nmb"
+                android:textOff=" "
+                android:textOn=" " />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+                android:id="@+id/hkt_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_hkt"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <ToggleButton
+                android:id="@+id/jkt_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_jkt"
+                android:textOff=" "
+                android:textOn=" " />
+
+            <ToggleButton
+                android:id="@+id/snh_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_snh"
+                android:textOff=" "
+                android:textOn=" " />
+        </TableRow>
+
+       <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ToggleButton
+                android:id="@+id/ngzk_toggle"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/toogle_ngzk"
+                android:textOff=" "
+                android:textOn=" " />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/win8_button_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_win8_orange"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/win8_button_middle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@color/Lime"
+            android:text="@string/collect_submit" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Dark_Purple"
+    android:flipInterval="400"
+    android:inAnimation="@android:anim/slide_in_left"
+    android:outAnimation="@android:anim/slide_out_right"
+    android:persistentDrawingCache="animation" >
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+
+	    <TextView
+	        android:id="@+id/in_env_file_save"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_margin="25dp"
+	        android:text="@string/app_name"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/White"
+	        android:textSize="50sp" />
+
+	    <babybear.akbquiz.MarqueeTextView
+	        android:id="@+id/notice"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="#80000000"
+	        android:ellipsize="marquee"
+	        android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        android:maxLines="1"
+	        android:padding="1dp"
+	        android:scrollbars="none"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/White"
+	        android:visibility="invisible" />
+
+	    <TableLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_margin="15dp" >
+
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1" >
+
+	            <ImageButton
+	                android:id="@+id/start"
+	                style="@style/win8_button_large"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/button_win8_coral"
+	                android:contentDescription="@string/menu_start_game"
+	                android:src="@drawable/play_ico" />
+
+	            <ImageButton
+	                android:id="@+id/record"
+	                style="@style/win8_button_large"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:layout_weight="1"
+	                android:background="@color/Brown_alt"
+	                android:contentDescription="@string/menu_record"
+	                android:scaleType="center"
+	                android:src="@drawable/record_ico" />
+
+	        </TableRow>
+
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="0dp"
+	            android:layout_weight="1" >
+
+	            <ImageButton
+	                android:id="@+id/users"
+	                style="@style/win8_button_large"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/button_win8_lime"
+	                android:contentDescription="@string/menu_users"
+	                android:src="@drawable/user_ico" />
+
+	            <ImageButton
+	                android:id="@+id/config"
+	                style="@style/win8_button_large"
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_margin="5dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/button_win8_green"
+	                android:contentDescription="@string/menu_config"
+	                android:src="@drawable/config_ico" />
+
+	        </TableRow>
+
+	    </TableLayout>
+	
+	</RelativeLayout>
+	
+	 <LinearLayout
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:orientation="vertical" >
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+		
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_weight="10"
+		        android:text="@string/menu_users"
+		        android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/config_bgm_remove"
+		        android:layout_margin="10dp" 
+		        android:textAppearance="?android:attr/textAppearanceMedium"/>
+		</LinearLayout>
+		
+	    <ListView
+	        android:id="@+id/listview_user"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#555" >
+
+    	</ListView>
+
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+
+	        <Button
+	            android:id="@+id/clear"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="10dp"
+	            android:layout_weight="1"
+	            android:text="@string/back" />
+
+	        <Button
+	            android:id="@+id/create_user"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="10dp"
+	            android:layout_weight="1"
+	            android:text="@string/menu_new_user" />
+	    </LinearLayout>
+
+	</LinearLayout>
+	
+</ViewFlipper>

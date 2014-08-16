@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Magenta">#FF0097</color>
+    <color name="Purple">#6e155f</color>
+    <color name="Teal">#4eb3b9</color>
+    <color name="Lime">#96b232</color>
+    <color name="Brown">#a05000</color>
+    <color name="Pink">#e671b8</color>
+    <color name="Orange">#de9317</color>
+    <color name="Blue">#1ba1e2</color>
+    <color name="Red">#e51400</color>
+    <color name="Green">#339933</color>
+    <color name="Marine">#034888</color>
+    <color name="Light_Purple">#5859b9</color>
+    <color name="Coral">#d54d34</color>
+    <color name="Dark_Purple">#260930</color>
+    <color name="White">#ffffff</color>
+    <color name="Gray">#666666</color>
+    <color name="Black">#000000</color>
+    
+    <color name="Magenta_alt">#FF20b7</color>
+    <color name="Purple_alt">#8e357f</color>
+    <color name="Teal_alt">#6ed3d9</color>
+    <color name="Lime_alt">#b6d252</color>
+    <color name="Brown_alt">#c07020</color>
+    <color name="Pink_alt">#ff91d8</color>
+    <color name="Orange_alt">#feb337</color>
+    <color name="Blue_alt">#3bc1ff</color>
+    <color name="Red_alt">#ff3420</color>
+    <color name="Green_alt">#53b953</color>
+    <color name="Marine_alt">#2368a8</color>
+    <color name="Light_Purple_alt">#7879d9</color>
+    <color name="Coral_alt">#f56d54</color>
+    <color name="Dark_Purple_alt">#462950</color>
+</resources>

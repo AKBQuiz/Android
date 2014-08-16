@@ -1,0 +1,185 @@
+<resources>
+
+    <string name="app_name">AKB问答</string>
+    <string name="license_title">开源许可</string>
+    <string name="license">
+        \t\t本游戏（应用）是开源非盈利项目。\n\n
+        \t\t本游戏（应用）包含了少量修改的Sina微博SDK代码。此部分代码作者未声明开源协议，作者视之为使用 BSD-new 或 MIT 协议。\n\n
+        \t\t本游戏（应用）中除开上述部分以外的程序代码遵循GNU Lesser General Public License(GNU LGPL, GNU 宽通用公共许可证)标准。\n\n
+        \t具体内容见安装包中附带的英文协议副本或参考中文翻译版本，或者访问:\n
+        \t\t http://www.gnu.org/licenses/lgpl.html \n  查看GNU LGPL英文原版\n\n
+        \t\t本游戏（应用）中使用的原创图片文件遵循CC-NC协议。\n\n
+        \t\tAKB48 SKE48 NMB48 HKT48 SND48 JKT48 SNH48 乃木板46 等都是大型偶像团体的名称，名称及其商标归各自运营公司所有。\n\n
+        \t\t本游戏（应用）中使用到的声音文件是从网络收集到的，可供开源软件使用的。\n\n
+        \t\t本游戏（应用）中使用到的题目都是网上收集，作者本人并不为之负任何责任。\n\n
+        \t\t本声明适用于AKBQuiz v0.3.0(7)及以上版本。</string>
+    <string name="who_are_we">繁花社</string>
+    <string name="about_fhs">繁花社是由D大牵头，由爱好AKB48及其姐妹团体的Fan们自发组织的一个AKB系游戏MOD同人相关制作团体，进行游戏MOD，同人小说，制图等创作。\n
+        \t目前作品包括三国志11MOD《繁花战记》、战国天下录MOD《百花乱》、冠军足球经理MOD《冠军足球经理之飞翔入球》、太阳神三国杀MOD《繁华乱》、 信长之野望11MOD《战国繁花录》、信长之野望13MOD《繁花の野望》、太阳帝国的原罪MOD《繁花星辰录》以及AKBQuiz等。\n
+        </string>
+    <string name="err_init">初始化失败!!</string>
+    
+    
+    <string name="config_bgm">背景音乐</string>
+    <string name="config_bg_image">背景图片</string>
+    <string name="config_sound">音效</string>
+    <string name="config_volume">音量</string>
+    <string name="config_bgm_custom">播放列表</string>
+    <string name="config_bgm_add">添加</string>
+    <string name="config_bgm_remove">删除</string>
+    <string name="config_bgm_onmodifing">正在操作第 %1$d 项: "%2$s"</string>
+    <string name="config_audio">音频设置</string>
+    <string name="config_vibration">振动</string>
+    <string name="config_ranking">给应用评分</string>
+    <string name="config_update">检查更新</string>
+    <string name="config_single">单曲循环</string>
+    <string name="config_loop">全曲循环</string>
+    <string name="config_random">随机</string>
+    <string name="config_quiz_submit">我要出题</string>
+    <string name="config_calendar_editor">添加妹子的生日到日历</string>
+    <string name="config_change_bgimage">更换</string>
+    <string name="config_restore_bgimage">恢复默认</string>
+
+    <string name="on">开</string>
+    <string name="off">关</string>
+    <string name="back">返回</string>
+    <string name="remove">移除</string>
+    <string name="sdcard_unavailable">SD卡不可用</string>
+    
+    <string name="chooser_diffi">难度</string>
+    <string name="chooser_err_unchoosed">请至少选择一个团体</string>
+    
+    <string name="collect_editor">作者</string>
+    <string name="collect_editor_hint">请输入你的名字</string>
+    <string name="collect_question">问题</string>
+    <string name="collect_question_hint">请输入你的问题</string>
+    <string name="collect_answer">正确答案</string>
+    <string name="collect_answer_hint">这道题的正确答案是&#8230;</string>
+    <string name="collect_wrong1">备选答案1</string>
+    <string name="collect_wrong_hint">这个答案是错的&#8230;</string>
+    <string name="collect_wrong2">备选答案2</string>
+    <string name="collect_wrong3">备选答案3</string>
+    <string name="collect_groups">相关团队</string>
+    <string name="collect_submit">提交</string>
+    <string name="collect_sending">提交中&#8230;</string>
+    <string name="collect_success">提交成功</string>
+    <string name="collect_fail">提交失败</string>
+	<string name="collect_err_editor">作者名需要大于等于%1$d且小于等于%2$d字</string>
+	<string name="collect_err_diffculty">请设置难度</string>
+	<string name="collect_err_question">问题内容需要大于等于%1$d且小于等于%2$d字</string>
+	<string name="collect_err_options">选项内容需要大于等于%1$d且小于等于%2$d字</string>
+       
+    
+    <string name="menu_config">选项</string>
+	<string name="menu_start_game">开始游戏</string>
+    <string name="menu_users">用户</string>
+    <string name="menu_record">记录</string>
+    <string name="menu_quit">退出</string>
+    <string name="menu_new_user">建立新用户</string>
+    <string name="menu_only_user">这是唯一的用户，不可删除</string>
+    <string name="menu_type_username">请输入一个用户名</string>
+    <string name="menu_username_duplicate">已存在相同的用户</string>
+    <string name="menu_delete_confirm">确认删除该用户?</string>
+    <string name="menu_delete_info">确定要删除用户“%1$s”吗？</string>
+   
+
+    
+    <string name="summary_title">统计信息</string>
+    <string name="summary_right">正确：</string>
+    <string name="summary_wrong">错误：</string>
+    <string name="summary_time">用时：</string>
+    <string name="summary_mean_time">平均每题用时：</string>
+    <string name="summary_rate">正确率：</string>
+    <string name="summary_sum">答题：</string>
+    <string name="summary_share">分享</string>
+    
+    <string name="weibo_template">我在#AKBQuiz#答了%1$d个题，%2$d正%3$d误，用时%4$d s,正确率%5$d%%。</string>
+	<string name="weibo_update_success">微博发布成功</string>
+	<string name="weibo_update_fail">微博发布失败</string>
+	<string name="weibo_auth_success">认证成功</string>
+	<string name="weibo_linkto">微博授权</string>
+    <string name="weibo_linked">取消授权</string>
+    <string name="weibo_err_unauth">还未授权微博或微博授权已过期</string>
+	<string name="weibo_err_userinfo">获取用户信息失败</string>
+	<string name="weibo_err_auth">认证错误:</string>
+	<string name="weibo_err_cancel">认证取消</string>
+	
+    <string name="separator">" - "</string>
+    <string name="click_to_start">点击屏幕开始</string>
+    <string name="fanhuashe">繁花社</string>
+    <string name="wrong">错误</string>
+    <string name="right">正确</string>
+    
+    <string name="quiz_loading">正在加载&#8230;</string>
+	<string name="quiz_querying">正在获取问题&#8230;</string>
+	<string name="quiz_processing">正在处理问题&#8230;</string>
+	<string name="quiz_complete">完成&#8230;</string>
+	<string name="quiz_noquiz">题库中没有选择的题目,或者您还没选择题目.</string>
+	<string name="quiz_title">ID. %1$d  出题者: %2$s</string>
+	<string name="quiz_question">第%1$d/%2$d题\n  %3$s"</string>
+	<string name="quiz_question_challenge">挑战模式第%1$d题\n  %2$s"</string>
+	<string name="gamemode_normal">一般模式</string>
+	<string name="gamemode_challenge">挑战模式</string>
+	
+	<string name="database_datefmt">yyyy年 MM月 dd日</string>
+	<string name="database_building">建立用户数据库</string>
+	<string name="database_user_created">用户:\'%1$s\'已建立</string>
+	<string name="database_user_removed">用户:\'%1$s\'已删除</string> 
+	<string name="database_t_notice_birthday">今天是 %1$s %2$s %3$s 的生日</string>
+	<string name="database_t_q_birthday">%2$s %1$s的生日是哪一天?</string>
+	<string name="database_t_q_comefrom">%2$s %1$s是来自哪里的?</string>
+	<string name="database_t_q_team">%1$s是哪个小队的?</string>
+	<string name="database_t_tips_birthday">你知道吗\n %1$s的生日是%2$s</string>
+	<string name="database_t_tips_comefrom">你知道吗\n %1$s来自%2$s</string>
+	<string name="database_t_tips_team">你知道吗\n %1$s是%2$s的成员</string>
+	<string name="database_t_tips_normal">你知道吗\n %1$s 答案是 %2$s</string>
+	<string name="database_update_err_unfind">数据库文件未找到,数据库升级失败</string>
+	<string name="database_update_err_create">无法建立数据文件,数据库升级失败</string>
+	<string name="database_err_unfind">数据文件未找到</string>
+    <string name="database_err_create">无法建立文件</string>
+	
+	<string name="calendar_title">选择要添加的妹子</string>
+	<string name="calendar_notsupport">如果您看见这条消息，说明本功能目前还不支持您的系统。请联系作者以便改进&#8230;</string>
+	<string name="calendar_choose">选择日历</string>
+	<string name="calendar_choose_witch">添加到哪个日历?</string>
+	<string name="calendar_clear">清空日历</string>
+	<string name="calendar_forceclear">再点击%1$d次清空按钮执行强制清空日历</string>
+	<string name="calendar_clear_echo">已清除%1$s个日历项</string>
+	<string name="calendar_deleted">已删除</string>
+	<string name="calendar_event_title">%1$s的生日</string>
+	<string name="calendar_event_Team">%1$s Team %2$s </string>
+	<string name="calendar_event_comefrom">来自%1$s </string>
+	<string name="calendar_add_success">添加生日成功</string>
+	<string name="calendar_err_choose">请先选择一个日历</string>
+	<string name="calendar_err_noinfo">没有此成员的生日信息</string>
+	<string name="calendar_err_decodefail">成员的生日信息解析失败</string>
+	<string name="calendar_err_addfail">添加生日失败</string>
+	
+	
+	<string name="update_title">软件更新</string>
+	<string name="update_isnewest">当前版本:%1$s (%2$d) \n已是最新版,无需更新!</string>
+	<string name="update_have_update">当前版本:%1$s (%2$d), 发现新版本%3$s (%4$d), 是否更新?</string>
+	<string name="update_do_update">更新</string>
+	<string name="update_later">暂不更新</string>
+	<string name="update_downloading">正在下载</string>
+	<string name="update_waiting">请稍后&#8230;</string>
+	<string name="update_err_getver">获取版本信息失败</string>
+	        
+    <string name="groupname_akb48">AKB48</string>
+    <string name="groupname_ske48">SKE48</string>
+    <string name="groupname_nmb48">NMB48</string>
+    <string name="groupname_hkt48">HKT48</string>
+    <string name="groupname_ngzk46">乃木板46</string>
+    <string name="groupname_sdn48">SDN48</string>
+    <string name="groupname_jkt48">JKT48</string>
+    <string name="groupname_snh48">SNH48</string>
+    
+	<color name="groupcolor_akb48">#fbbbd8</color>
+	<color name="groupcolor_ske48">#fbd235</color>
+	<color name="groupcolor_nmb48">#b66414</color>
+	<color name="groupcolor_hkt48">#000000</color>
+	<color name="groupcolor_ngzk46">#bf00ad</color>
+	<color name="groupcolor_sdn48">#85badc</color>
+	<color name="groupcolor_jkt48">#fb202b</color>
+	<color name="groupcolor_snh48">#b9f1fd</color>
+</resources>
